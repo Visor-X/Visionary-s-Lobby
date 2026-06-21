@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#00a2ff;
+}
+body::selection{
+    color:#ada2ff;
+    background-color:#10033e
+}
+header{
+    color:#00a2ff;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    overflow:hidden
+}
+p,h1{
+    color:#00a2ff;
+}
+h1 {
+    font-size: clamp(1rem, 2vw + 3rem, 4rem);
+    margin: auto;
+}
+a:link{
+    color:#1300a5;
+    text-decoration:none;
+}
+a:visited{
+    color:#0f0082;
+    text-decoration:none;
+}
+a:link:hover{
+    cursor:pointer;
+    font-size:1.1rem;
+    color:black;
+}
+button:hover{
+    cursor:pointer;
+    font-size:1.1rem;
+    color:black;
+}
+.containerFlex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+.navMenuTop{
+    position: sticky;
+    top: 5px;
+    margin-bottom: 5px;
+    display:flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 5px;
+}
+.navMenuTop a {
+    position: sticky;
+    top: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    background-color: #47acff;
+    border: 10px solid #47acff;
+    font-weight: bolder;
+}
+
+/*------FOR HEADERS---------*/
+
+.marqueeContainerLeft header {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #000000;
+}
+.marqueeTrackLeft {
+    display: flex;
+    width: max-content;
+    animation: marqueeSlideLeft 60s linear infinite;
+}
+.marqueeTextLeft {
+    font-family: sans-serif;
+    font-size: clamp(1rem, 1.5vw,5rem);
+    font-weight: bold;
+    color: #47acff;
+}
+.marqueeContainerRight header {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #000000;
+}
+.marqueeTrackRight {
+    display: flex;
+    width: max-content;
+    animation: marqueeSlideRight 60s linear infinite;
+}
+.marqueeTextRight {
+    font-family: sans-serif;
+    font-size: clamp(1rem, 1.5vw,5rem);
+    font-weight: bold;
+    color: #47acff;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+@keyframes marqueeSlideLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+     }
+}
+@keyframes marqueeSlideRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/*------FOR PAGE TRANSITIONS---------*/
+
+/*@view-transition{
+    navigation: auto;
+}
+
+::view-transition-group(root){
+    animation-duration: 1s;
+}
+::view-transition-new(root){
+    animation-name: slideIn;
+}
+::view-transition-old(root){
+    animation-name: slideOut;
+}
+
+@keyframes slideOut{
+    to{
+        transform:translateY(-100%);
+    }
+}
+@keyframes slideIn{
+    from{
+        transform:translateY(100%);
+    }
+}
+

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Stylesheets/DefaultStyle.css" />
+  </head>
+  <style>
+    a {
+      font-size: 20px;
+      font-weight: bolder;
+      border: 5px solid #47acff;
+      background-color: #47acff;
+    }
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5px;
+    }
+    .slotsContainer {
+      margin-top: 50px;
+      margin-bottom: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 100px;
+    }
+    #moneyCounter {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bolder;
+      border: 5px solid #47acff;
+    }
+    #currentBet {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    #currentLoan {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    #slots {
+      width: 250px;
+      height: 250px;
+      font-size: 200px;
+      display: flex;
+      flex-direction: column-reverse;
+      border: 10px solid #47acff;
+      overflow: hidden;
+    }
+    #slotsLabel {
+      margin-left: 25%;
+    }
+    .slotsLoop {
+      animation: spinToWin 2s linear infinite;
+    }
+    .landOn0 {
+      animation: landOn0 1s linear 1 forwards;
+    }
+    .landOn1 {
+      animation: landOn1 1s linear 1 forwards;
+    }
+    .landOn2 {
+      animation: landOn2 1s linear 1 forwards;
+    }
+    .landOn3 {
+      animation: landOn3 1s linear 1 forwards;
+    }
+    .landOn4 {
+      animation: landOn4 1s linear 1 forwards;
+    }
+    .landOn5 {
+      animation: landOn5 1s linear 1 forwards;
+    }
+    .landOn6 {
+      animation: landOn6 1s linear 1 forwards;
+    }
+    .landOn7 {
+      animation: landOn7 1s linear 1 forwards;
+    }
+    .landOn8 {
+      animation: landOn8 1s linear 1 forwards;
+    }
+    .landOn9 {
+      animation: landOn9 1s linear 1 forwards;
+    }
+
+    button {
+      border: 5px solid #47acff;
+      background-color: #47acff;
+      font-size: large;
+      font-weight: bold;
+      color: #00109d;
+    }
+    @keyframes spinToWin {
+      100% {
+        transform: translateY(100%);
+      }
+    }
+    @keyframes landOn9 {
+      100% {
+        transform: translateY(100%);
+      }
+    }
+    @keyframes landOn8 {
+      100% {
+        transform: translateY(110%);
+      }
+    }
+    @keyframes landOn7 {
+      100% {
+        transform: translateY(120%);
+      }
+    }
+    @keyframes landOn6 {
+      100% {
+        transform: translateY(130%);
+      }
+    }
+    @keyframes landOn5 {
+      100% {
+        transform: translateY(140%);
+      }
+    }
+    @keyframes landOn4 {
+      100% {
+        transform: translateY(150%);
+      }
+    }
+    @keyframes landOn3 {
+      100% {
+        transform: translateY(160%);
+      }
+    }
+    @keyframes landOn2 {
+      100% {
+        transform: translateY(170%);
+      }
+    }
+    @keyframes landOn1 {
+      100% {
+        transform: translateY(180%);
+      }
+    }
+    @keyframes landOn0 {
+      100% {
+        transform: translateY(190%);
+      }
+    }
+  </style>
+  <body>
+    <div class="marqueeContainerRight">
+      <div class="marqueeTrackRight">
+        <div class="marqueeTextRight">
+          I GIVE EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT //&nbsp;
+        </div>
+        <div class="marqueeTextRight" aria-hidden="true">
+          I GIVE EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT //&nbsp;
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <h1>SLOTS SLOTS SLOTS</h1>
+    </header>
+
+    <div class="marqueeContainerLeft">
+      <div class="marqueeTrackLeft">
+        <div class="marqueeTextLeft">
+          I GIVE EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT //&nbsp;
+        </div>
+        <div class="marqueeTextLeft" aria-hidden="true">
+          I GIVE EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT // I GIVE
+          EVERYTHING THAT I GOT // AIN'T NOBODY TAKING MY SPOT //&nbsp;
+        </div>
+      </div>
+    </div>
+
+    <p id="moneyCounter">Money : 0</p>
+    <div class="buttonContainer" style="margin-top: -50px; font-size: 20px">
+      <p>Sounds and Music by :</p>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=DrHL4TzX6t8&list=RDDrHL4TzX6t8&start_radio=1"
+        >Pharozen (Admiring You)</a
+      >
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=_rQiTC7woSg&list=RD_rQiTC7woSg&start_radio=1"
+        >GameBoyJones (HIT THE JACKPOT!)</a
+      >
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=J7DOpglDWMk&list=RDJ7DOpglDWMk&start_radio=1"
+        >unknown (Cry For Me X Hit The Jackpot Mashup)</a
+      >
+    </div>
+
+    <div class="buttonContainer">
+      <button style="font-size: 50px" id="rollSlots">Roll The Slots</button>
+    </div>
+    <div class="buttonContainer" style="margin-top: 10px">
+      <button id="requestLoan">Take A Loan</button>
+      <button id="removeMoney">Liquify Assets</button>
+    </div>
+    <div class="buttonContainer" style="margin-top: 10px">
+      <button id="raiseBet">Raise The Bet</button>
+      <button id="lowerBet">Lower The Bet</button>
+    </div>
+
+    <p id="currentBet">Current Bet : 0</p>
+    <p id="currentLoan">Current Loan : 0</p>
+
+    <div class="slotsContainer">
+      <div id="slots">
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+      </div>
+      <div id="slots">
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+      </div>
+      <div id="slots">
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+        <label class="slotsLoop" id="slotsLabel">0 1 2 3 4 5 6 7 8 9</label>
+      </div>
+    </div>
+    <div style="margin-left: 35vw">
+      <p>Note : I do not condone gambling, this was made for fun.</p>
+    </div>
+
+    <audio autoplay loop id="admiringYou">
+      <source src="../Audio/Extras/Admiring You.mp3" />
+    </audio>
+    <script src="../Scripts/SlotsScript.js"></script>
+  </body>
+</html>
