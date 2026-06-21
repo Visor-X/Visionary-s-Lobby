@@ -32,13 +32,9 @@ function scoreCalculate(){
                 gradeLabel.textContent = "D"
                 flavorText.textContent = "DULL!"
             break
-        case(score>=20):
+        case(score<50):
                 gradeLabel.textContent = "F"
                 flavorText.textContent = "FLOP!"
-            break
-        case(score<20):
-                gradeLabel.textContent = "M"
-                flavorText.textContent = "YOU HAVE MEGUMI!!!"
             break
     }
 }
